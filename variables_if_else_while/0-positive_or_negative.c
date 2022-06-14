@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
-/*
- * main - prints a random number and, if its positive or negative
+/**
+ * main - prints a random number and if its positive or negative
  *
  * Return: always 0
  */
@@ -16,6 +16,6 @@ int main(void)
 	else if (n < 0)
 		printf("%d is negative", n);
 	else
-		print("%d is zero", n);
+		printf("%d is zero", n);
 	return (0);
 }
