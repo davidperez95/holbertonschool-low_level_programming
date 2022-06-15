@@ -10,8 +10,11 @@ void print_alphabet_x10(void)
 	int i = 0;
 
 	for (i = 0; i <= 9; i++)
+	{
+		if (i != 9)		
+			_putchar('\n');
+
 		for (str = 97; str <= 122; str++)
 			_putchar(str);
-
-	_putchar('\n');
+	}
 }
