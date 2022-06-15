@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	for (i = 0; i <= 9; i++)
 	{
 		if (i == 0)
-			continue
+			continue;
 		else
 			_putchar('\n');
 
