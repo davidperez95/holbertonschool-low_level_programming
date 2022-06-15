@@ -11,7 +11,9 @@ void print_alphabet_x10(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		if (i != 9)		
+		if (i == 0)
+			continue
+		else
 			_putchar('\n');
 
 		for (str = 97; str <= 122; str++)
