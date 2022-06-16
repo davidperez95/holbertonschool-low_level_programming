@@ -9,7 +9,11 @@ int print_last_digit(int n)
 {
 	int number;
 
-	number = n % 10;
+	if (n < 0)
+		number = -1 * (n % 10);
+	else
+		number = n % 10;
 
-	return (number);
+	_putchar((number % 10) + '0');
+	return (number % 10);
 }
