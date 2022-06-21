@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * fizzbuzz - prints the numbers from 1 to 100
+ * main - prints the numbers from 1 to 100
  *
  * Return: void
  */
-void fizzbuzz(void)
+void main(void)
 {
 	int i;
 
