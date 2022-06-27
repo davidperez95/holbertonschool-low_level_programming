@@ -39,4 +39,4 @@ void rev_string(char *s)
 		s[i++] = rev;
 		s[len--] = aux;
 	}
-}	
+}
