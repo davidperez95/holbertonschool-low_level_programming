@@ -17,9 +17,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == accept[i])
 				return (s);
-			else
-				return (NULL);
 		}
+
+		if (*s == '\0')
+			return (NULL);
 	}
+
 	return (s);
 }
