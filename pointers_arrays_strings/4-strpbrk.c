@@ -18,10 +18,8 @@ char *_strpbrk(char *s, char *accept)
 			if (*s == accept[i])
 				return (s);
 		}
-
-		if (*s == '\0')
-			return (NULL);
 	}
 
-	return (s);
+	if (!(*s))
+		return (NULL);
 }
