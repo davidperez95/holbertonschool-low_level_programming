@@ -20,6 +20,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	if (!(*s))
-		return (NULL);
+	return (NULL);
 }
