@@ -20,6 +20,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	if (*s == '\0')
+	if (*s == accept[i])
 		return (NULL);
 }
