@@ -11,6 +11,12 @@ int main(int argc, char **argv)
 {
 	int i = 0, mult = 1;
 
+	if (argc <= 1)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -20,11 +26,5 @@ int main(int argc, char **argv)
 		return (EXIT_SUCCESS);
 	}
 
-	if (argc <= 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	return (0);
 }
-
-
