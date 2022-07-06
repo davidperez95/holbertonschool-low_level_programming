@@ -19,7 +19,8 @@ int main(int argc, char **argv)
 		printf("%d\n", mult);
 		return (EXIT_SUCCESS);
 	}
-	else
+
+	if (argc <= 1)
 	{
 		printf("Error\n");
 		return (1);
