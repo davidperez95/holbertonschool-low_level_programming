@@ -24,10 +24,13 @@ char *str_concat(char *s1, char *s2)
 	for (len_s2 = 0; s2[len_s2] != '\0'; )
 		len_s2++;
 
-	new_string = malloc(sizeof(*new_string) * (len_s1 + len_s1 + 1));
+	new_string = malloc(sizeof(char) * (len_s1 + len_s1 + 1));
 
 	if (!new_string)
+	{
+		free(new_string);
 		return (NULL);
+	}
 
 	for (i = 0; s1[i] != '\0'; i++)
 		new_string[i] = s1[i];
