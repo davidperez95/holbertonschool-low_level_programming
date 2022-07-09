@@ -60,7 +60,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			free(new_string);
 			return (NULL);
 		}
-
 		for (i = 0; s1[i] != '\0'; i++)
 			new_string[i] = s1[i];
 
@@ -69,4 +68,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		new_string[i] = '\0';
 		return (new_string);
 	}
+	return (EXIT_SUCCESS);
 }
