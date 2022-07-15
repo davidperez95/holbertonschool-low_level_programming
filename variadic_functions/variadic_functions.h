@@ -1,5 +1,5 @@
-#ifndef _MAIH_H_
-#define _MAIN_H_
+#ifndef _VARIADIC_FUNCTIONS_
+#define _VARIADIC_FUNCTIONS_
 
 /* importing */
 
@@ -11,7 +11,7 @@
 /* types and structures */
 
 
-/* macros constant values */ 
+/* macros constant values */
 
 
 /* prototypes */
@@ -19,7 +19,7 @@
 int sum_them_all(const unsigned int n, ...);
 
 
-/* macro functions */ 
+/* macro functions */
 
 
 #endif /* _MAIN_H_ */
