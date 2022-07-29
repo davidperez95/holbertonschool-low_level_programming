@@ -20,7 +20,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 	if (temp == NULL || (temp->next == NULL && index != 0))
-		return (EXIT_FALIURE);
+		return (FALIURE);
 
 	node = temp->next;
 
@@ -35,5 +35,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		*head = node;
 	}
 
-	return (EXIT_SUCCESS);
+	return (SUCCESS);
 }

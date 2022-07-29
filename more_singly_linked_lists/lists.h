@@ -26,8 +26,8 @@ typedef struct listint_s
 
 /*macros constatn values */
 
-#define EXIT_SUCCESS 1
-#define EXIT_FALIURE -1
+#define SUCCESS 1
+#define FALIURE -1
 
 /* prototypes */
 
