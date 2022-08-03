@@ -9,10 +9,10 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	unsigned int nodes = 0;
-	dlistint_t *temp = NULL;
+	const dlistint_t *temp = NULL;
 
 	if (!h)
-		return (NULL);
+		return (0);
 
 	temp = h;
 	while (temp != NULL)
