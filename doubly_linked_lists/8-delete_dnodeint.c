@@ -20,21 +20,21 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		*head = temp->next;
 		free(temp);
-		return (1);
 	}
-
-	temp = temp->next;
-	while (temp != NULL)
+	else
 	{
-		if (node == index)
+		temp = temp->next;
+		while (temp != NULL)
 		{
-			temp->prev->next = temp->next;
-			temp->next->prev = temp->prev;
-			free(temp);
-			return (1);
+			if (node == index)
+		{	
+				temp->prev->next = temp->next;
+				temp->next->prev = temp->prev;
+				free(temp);
 		}
 		temp = temp->next;
 		node++;
-	}
-	return (-1);
+		}
+	}	
+	return (1);
 }
