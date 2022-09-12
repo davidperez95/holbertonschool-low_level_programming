@@ -1,5 +1,5 @@
 #ifndef _SEARCH_H_
-#define _SEACH_H_
+#define _SEARCH_H_
 
 /* Importing */
 #include <stdio.h>
